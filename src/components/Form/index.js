@@ -23,7 +23,7 @@ class Form extends Component{
         const { value } = e.target;
         
         this.setState({
-            value
+            value: +value
         })
 
     }

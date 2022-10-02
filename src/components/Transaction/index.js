@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
-const Transaction = ({transaction}) =>
+import { Wrapper } from './styles';
+
+const Transaction = ({transaction: {value,label}}) =>
 (
-    <div>
-    label: {transaction.label}
-    <p>Value: {transaction.value}</p>
-  </div>
+    <Wrapper value={value}>
+    label: {label}
+    <p>Value: {value}</p>
+  </Wrapper>
 
 )
 Transaction.propTypes = {
     transaction:PropTypes.shape ({
         label: PropTypes.string,
-        value: PropTypes.string
+        value: PropTypes.number
     })
 }
 Transaction.defaultProps = {
