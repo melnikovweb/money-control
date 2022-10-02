@@ -6,5 +6,5 @@ border:1px solid #dbdbdb;
 border-radius: 5px;
 padding: 5px;
 margin: 10px;
-`
- 
+`;
+Wrapper.displayName = 'TransactionWrapper'

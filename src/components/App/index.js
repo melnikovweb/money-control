@@ -3,7 +3,7 @@ import  { Component } from "react";
 import Balance from "../Balance";
 import Transactions from "../Transactions";
 import Form from "../Form";
-import {Wrapper} from './styles';
+import {GlobalStyle, Wrapper} from './styles';
 
 let id = 0;
 class App extends Component {
@@ -33,6 +33,7 @@ class App extends Component {
   render(){
     return (
       <Wrapper>
+        <GlobalStyle/>
         <Balance balance={this.state.balance}/>
         <Form onChange={this.onChange}/>
         <hr/>
